@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Simple Blog</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <h1>My Blog</h1>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Home -->
+        <section id="home" class="hero">
+            <h2>Welcome to My Blog</h2>
+            <p>Learn, Explore and Grow with simple articles.</p>
+        </section>
+
+        <!-- Blogs -->
+        <section id="blogs">
+            <h2 class="section-title">Latest Blogs</h2>
+
+            <div class="blog-container">
+
+                <div class="blog-card">
+                    <h3>Learn Java Programming</h3>
+                    <p>
+                        Java is a popular programming language used for
+                        software and web development.
+                    </p>
+                    <button onclick="readBlog('Java Programming')">
+                        Read More
+                    </button>
+                </div>
+
+                <div class="blog-card">
+                    <h3>Why Learn HTML & CSS?</h3>
+                    <p>
+                        HTML creates the structure of a website and CSS
+                        makes it beautiful.
+                    </p>
+                    <button onclick="readBlog('HTML and CSS')">
+                        Read More
+                    </button>
+                </div>
+
+                <div class="blog-card">
+                    <h3>Tips for Students</h3>
+                    <p>
+                        Small daily improvements can help students achieve
+                        their career goals.
+                    </p>
+                    <button onclick="readBlog('Student Tips')">
+                        Read More
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a student learning web development and
+                programming. This is my simple blog website.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+
+            <form onsubmit="submitForm(event)">
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 My Blog | All Rights Reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
